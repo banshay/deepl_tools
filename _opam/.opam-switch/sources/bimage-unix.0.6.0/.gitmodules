@@ -1,3 +1,0 @@
-[submodule "unix/ezimage"]
-	path = unix/ezimage
-	url = https://github.com/zshipko/ezimage

@@ -1,9 +1,0 @@
-(library
- (name bimage_io)
- (public_name bimage-io)
- (foreign_stubs
-  (language cxx)
-  (names input output spec))
- (c_library_flags
-  (-lOpenImageIO -lOpenImageIO_Util -lstdc++))
- (libraries bimage threads))

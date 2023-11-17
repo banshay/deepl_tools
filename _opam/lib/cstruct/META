@@ -1,8 +1,0 @@
-version = "6.2.0"
-description = ""
-requires = ""
-archive(byte) = "cstruct.cma"
-archive(native) = "cstruct.cmxa"
-plugin(byte) = "cstruct.cma"
-plugin(native) = "cstruct.cmxs"
-jsoo_runtime = "cstruct.js"
