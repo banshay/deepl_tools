@@ -1,0 +1,150 @@
+# dune build -w
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/banshay/projects/deepl_tools
+# Auto-detected concurrency: 32
+$ /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlc.opt -config > /tmp/dune_55a6c5_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin =
+#      External "/home/banshay/projects/deepl_tools/image_cutter2/_opam/bin"
+#  ; ocaml =
+#      Ok
+#        External
+#          "/home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocaml"
+#  ; ocamlc =
+#      External
+#        "/home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok
+#        External
+#          "/home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok
+#        External
+#          "/home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok
+#        External
+#          "/home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlmklib.opt"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" : "/home/banshay/projects/deepl_tools/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths =
+#      [ External "/home/banshay/projects/deepl_tools/image_cutter2/_opam/lib"
+#      ]
+#  ; ocaml_config =
+#      { version = "4.14.1"
+#      ; standard_library_default =
+#          "/home/banshay/projects/deepl_tools/image_cutter2/_opam/lib/ocaml"
+#      ; standard_library =
+#          "/home/banshay/projects/deepl_tools/image_cutter2/_opam/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  ; instrument_with = []
+#  }
+# Promoting "_build/default/image_cutter2/image_cutter2.opam" to
+# "image_cutter2/image_cutter2.opam"
+# Attempted to add watch to non-existent directory
+# /home/banshay/projects/deepl_tools/image_cutter2/$HOME/.local.
+$ (cd _build/default && /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I image_cutter2/test/.image_cutter2.eobjs/byte -no-alias-deps -opaque -o image_cutter2/test/.image_cutter2.eobjs/byte/dune__exe__Image_cutter2.cmi -c -intf image_cutter2/test/image_cutter2.mli)
+$ (cd _build/default && /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I image_cutter2/bin/.main.eobjs/byte -I /home/banshay/projects/deepl_tools/image_cutter2/_opam/lib/camlimages -no-alias-deps -opaque -o image_cutter2/bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf image_cutter2/bin/main.mli)
+$ (cd _build/default && /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I image_cutter2/bin/.main.eobjs/byte -I image_cutter2/bin/.main.eobjs/native -I /home/banshay/projects/deepl_tools/image_cutter2/_opam/lib/camlimages -intf-suffix .ml -no-alias-deps -opaque -o image_cutter2/bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl image_cutter2/bin/main.ml)
+> File "image_cutter2/bin/main.ml", line 1, characters 5-11:
+> 1 | open Bimage
+>          ^^^^^^
+> Error: Unbound module Bimage
+[2]
+$ (cd _build/default && /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I image_cutter2/test/.image_cutter2.eobjs/byte -I image_cutter2/test/.image_cutter2.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o image_cutter2/test/.image_cutter2.eobjs/native/dune__exe__Image_cutter2.cmx -c -impl image_cutter2/test/image_cutter2.ml)
+# Attempted to add watch to non-existent directory /mnt/c/cygwin.
+# Attempted to add watch to non-existent directory /mnt/c/Program
+# Files/Microsoft Visual
+# Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/Hostx64.
+# Attempted to add watch to non-existent directory
+# /home/banshay/projects/deepl_tools/image_cutter2/$HOME/.local.
+$ (cd _build/default && /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I image_cutter2/lib/.image_cutter2.objs/byte -no-alias-deps -opaque -o image_cutter2/lib/.image_cutter2.objs/byte/image_cutter2.cmo -c -impl image_cutter2/lib/image_cutter2.ml-gen)
+$ (cd _build/default && /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I image_cutter2/lib/.image_cutter2.objs/byte -I image_cutter2/lib/.image_cutter2.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o image_cutter2/lib/.image_cutter2.objs/native/image_cutter2.cmx -c -impl image_cutter2/lib/image_cutter2.ml-gen)
+$ (cd _build/default && /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o image_cutter2/lib/image_cutter2.cma image_cutter2/lib/.image_cutter2.objs/byte/image_cutter2.cmo)
+$ (cd _build/default && /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o image_cutter2/lib/image_cutter2.cmxa image_cutter2/lib/.image_cutter2.objs/native/image_cutter2.cmx)
+$ (cd _build/default && /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o image_cutter2/test/image_cutter2.exe image_cutter2/test/.image_cutter2.eobjs/native/dune__exe__Image_cutter2.cmx)
+$ (cd _build/default && /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I image_cutter2/lib -o image_cutter2/lib/image_cutter2.cmxs image_cutter2/lib/image_cutter2.cmxa)
+$ (cd _build/default && /home/banshay/projects/deepl_tools/image_cutter2/_opam/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I image_cutter2/bin/.main.eobjs/byte -I image_cutter2/bin/.main.eobjs/native -I /home/banshay/projects/deepl_tools/image_cutter2/_opam/lib/camlimages -intf-suffix .ml -no-alias-deps -opaque -o image_cutter2/bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl image_cutter2/bin/main.ml)
+> File "image_cutter2/bin/main.ml", line 1, characters 5-15:
+> 1 | open Camlimages
+>          ^^^^^^^^^^
+> Error: Unbound module Camlimages
+[2]

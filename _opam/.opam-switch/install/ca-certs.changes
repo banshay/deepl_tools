@@ -1,0 +1,23 @@
+opam-version: "2.0"
+added: [
+  "doc/ca-certs" {"D"}
+  "doc/ca-certs/CHANGES.md" {"F:S1303T1700166771.36"}
+  "doc/ca-certs/LICENSE.md" {"F:S760T1700166771.36"}
+  "doc/ca-certs/README.md" {"F:S284T1700166771.36"}
+  "lib/ca-certs" {"D"}
+  "lib/ca-certs/META" {"F:S233T1700166771.36"}
+  "lib/ca-certs/ca_certs.a" {"F:S30590T1700166771.36"}
+  "lib/ca-certs/ca_certs.cma" {"F:S26159T1700166771.36"}
+  "lib/ca-certs/ca_certs.cmi" {"F:S2106T1700166771.36"}
+  "lib/ca-certs/ca_certs.cmt" {"F:S55014T1700166771.36"}
+  "lib/ca-certs/ca_certs.cmti" {"F:S10437T1700166771.36"}
+  "lib/ca-certs/ca_certs.cmx" {"F:S4472T1700166771.36"}
+  "lib/ca-certs/ca_certs.cmxa" {"F:S2211T1700166771.36"}
+  "lib/ca-certs/ca_certs.cmxs" {"F:S46120T1700166771.36"}
+  "lib/ca-certs/ca_certs.ml" {"F:S4598T1700166771.36"}
+  "lib/ca-certs/ca_certs.mli" {"F:S1012T1700166771.36"}
+  "lib/ca-certs/dune-package" {"F:S1069T1700166771.36"}
+  "lib/ca-certs/libca_certs_stubs.a" {"F:S5888T1700166771.36"}
+  "lib/ca-certs/opam" {"F:S1262T1700166771.36"}
+  "lib/stublibs/dllca_certs_stubs.so" {"F:S17680T1700166771.36"}
+]

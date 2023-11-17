@@ -1,0 +1,5 @@
+# dune init proj image_cutter2
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/banshay/projects/deepl_tools/image_cutter2
+# Auto-detected concurrency: 32

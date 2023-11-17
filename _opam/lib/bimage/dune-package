@@ -1,0 +1,178 @@
+(lang dune 3.11)
+(name bimage)
+(version 0.6.0)
+(sections (lib .) (libexec .) (doc ../../doc/bimage))
+(files
+ (lib
+  (META
+   bimage.a
+   bimage.cma
+   bimage.cmi
+   bimage.cmt
+   bimage.cmti
+   bimage.cmx
+   bimage.cmxa
+   bimage.ml
+   bimage.mli
+   bimage__.cmi
+   bimage__.cmt
+   bimage__.cmx
+   bimage__.ml
+   bimage__Color.cmi
+   bimage__Color.cmt
+   bimage__Color.cmti
+   bimage__Color.cmx
+   bimage__Data.cmi
+   bimage__Data.cmt
+   bimage__Data.cmti
+   bimage__Data.cmx
+   bimage__Error.cmi
+   bimage__Error.cmt
+   bimage__Error.cmti
+   bimage__Error.cmx
+   bimage__Expr.cmi
+   bimage__Expr.cmt
+   bimage__Expr.cmti
+   bimage__Expr.cmx
+   bimage__Filter.cmi
+   bimage__Filter.cmt
+   bimage__Filter.cmti
+   bimage__Filter.cmx
+   bimage__Hash.cmi
+   bimage__Hash.cmt
+   bimage__Hash.cmti
+   bimage__Hash.cmx
+   bimage__Image.cmi
+   bimage__Image.cmt
+   bimage__Image.cmti
+   bimage__Image.cmx
+   bimage__Input.cmi
+   bimage__Input.cmt
+   bimage__Input.cmti
+   bimage__Input.cmx
+   bimage__Kernel.cmi
+   bimage__Kernel.cmt
+   bimage__Kernel.cmti
+   bimage__Kernel.cmx
+   bimage__Pixel.cmi
+   bimage__Pixel.cmt
+   bimage__Pixel.cmti
+   bimage__Pixel.cmx
+   bimage__Transform.cmi
+   bimage__Transform.cmt
+   bimage__Transform.cmti
+   bimage__Transform.cmx
+   bimage__Type.cmi
+   bimage__Type.cmt
+   bimage__Type.cmti
+   bimage__Type.cmx
+   bimage__Util.cmi
+   bimage__Util.cmt
+   bimage__Util.cmx
+   color.ml
+   color.mli
+   data.ml
+   data.mli
+   dune-package
+   error.ml
+   error.mli
+   expr.ml
+   expr.mli
+   filter.ml
+   filter.mli
+   hash.ml
+   hash.mli
+   image.ml
+   image.mli
+   input.ml
+   input.mli
+   kernel.ml
+   kernel.mli
+   opam
+   pixel.ml
+   pixel.mli
+   transform.ml
+   transform.mli
+   type.ml
+   type.mli
+   util.ml))
+ (libexec (bimage.cmxs))
+ (doc (CHANGES.md LICENSE.md README.md)))
+(library
+ (name bimage)
+ (kind normal)
+ (archives (byte bimage.cma) (native bimage.cmxa))
+ (plugins (byte bimage.cma) (native bimage.cmxs))
+ (native_archives bimage.a)
+ (main_module_name Bimage)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name bimage__)
+     (visibility public)
+     (kind alias)
+     (source (path Bimage__) (impl (path bimage__.ml-gen))))
+    (name Bimage)
+    (modules
+     (module
+      (obj_name bimage)
+      (visibility public)
+      (source (path Bimage) (intf (path bimage.mli)) (impl (path bimage.ml))))
+     (module
+      (obj_name bimage__Color)
+      (visibility public)
+      (source (path Color) (intf (path color.mli)) (impl (path color.ml))))
+     (module
+      (obj_name bimage__Data)
+      (visibility public)
+      (source (path Data) (intf (path data.mli)) (impl (path data.ml))))
+     (module
+      (obj_name bimage__Error)
+      (visibility public)
+      (source (path Error) (intf (path error.mli)) (impl (path error.ml))))
+     (module
+      (obj_name bimage__Expr)
+      (visibility public)
+      (source (path Expr) (intf (path expr.mli)) (impl (path expr.ml))))
+     (module
+      (obj_name bimage__Filter)
+      (visibility public)
+      (source (path Filter) (intf (path filter.mli)) (impl (path filter.ml))))
+     (module
+      (obj_name bimage__Hash)
+      (visibility public)
+      (source (path Hash) (intf (path hash.mli)) (impl (path hash.ml))))
+     (module
+      (obj_name bimage__Image)
+      (visibility public)
+      (source (path Image) (intf (path image.mli)) (impl (path image.ml))))
+     (module
+      (obj_name bimage__Input)
+      (visibility public)
+      (source (path Input) (intf (path input.mli)) (impl (path input.ml))))
+     (module
+      (obj_name bimage__Kernel)
+      (visibility public)
+      (source (path Kernel) (intf (path kernel.mli)) (impl (path kernel.ml))))
+     (module
+      (obj_name bimage__Pixel)
+      (visibility public)
+      (source (path Pixel) (intf (path pixel.mli)) (impl (path pixel.ml))))
+     (module
+      (obj_name bimage__Transform)
+      (visibility public)
+      (source
+       (path Transform)
+       (intf (path transform.mli))
+       (impl (path transform.ml))))
+     (module
+      (obj_name bimage__Type)
+      (visibility public)
+      (source (path Type) (intf (path type.mli)) (impl (path type.ml))))
+     (module
+      (obj_name bimage__Util)
+      (visibility public)
+      (source (path Util) (impl (path util.ml))))))
+   (wrapped true))))

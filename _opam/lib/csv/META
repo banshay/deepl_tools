@@ -1,0 +1,7 @@
+version = "2.4"
+description = "A pure OCaml library to read and write CSV files."
+requires = "bytes"
+archive(byte) = "csv.cma"
+archive(native) = "csv.cmxa"
+plugin(byte) = "csv.cma"
+plugin(native) = "csv.cmxs"

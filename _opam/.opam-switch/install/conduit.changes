@@ -1,0 +1,34 @@
+opam-version: "2.0"
+added: [
+  "doc/conduit" {"D"}
+  "doc/conduit/CHANGES.md" {"F:S16394T1700166773.79"}
+  "doc/conduit/LICENSE.md" {"F:S769T1700166773.79"}
+  "doc/conduit/README.md" {"F:S1567T1700166773.79"}
+  "doc/conduit/odoc-pages/index.mld" {"F:S1738T1700166773.79"}
+  "lib/conduit" {"D"}
+  "lib/conduit/META" {"F:S245T1700166773.79"}
+  "lib/conduit/conduit.a" {"F:S66398T1700166773.79"}
+  "lib/conduit/conduit.cma" {"F:S91608T1700166773.79"}
+  "lib/conduit/conduit.cmi" {"F:S1887T1700166773.79"}
+  "lib/conduit/conduit.cmt" {"F:S56675T1700166773.79"}
+  "lib/conduit/conduit.cmti" {"F:S14548T1700166773.79"}
+  "lib/conduit/conduit.cmx" {"F:S2896T1700166773.79"}
+  "lib/conduit/conduit.cmxa" {"F:S8472T1700166773.79"}
+  "lib/conduit/conduit.cmxs" {"F:S81776T1700166773.79"}
+  "lib/conduit/conduit.ml" {"F:S1415T1700166773.79"}
+  "lib/conduit/conduit.mli" {"F:S2990T1700166773.79"}
+  "lib/conduit/conduit_trie.cmi" {"F:S1776T1700166773.79"}
+  "lib/conduit/conduit_trie.cmt" {"F:S69288T1700166773.79"}
+  "lib/conduit/conduit_trie.cmti" {"F:S12471T1700166773.79"}
+  "lib/conduit/conduit_trie.cmx" {"F:S3403T1700166773.79"}
+  "lib/conduit/conduit_trie.ml" {"F:S3583T1700166773.79"}
+  "lib/conduit/conduit_trie.mli" {"F:S1587T1700166773.79"}
+  "lib/conduit/dune-package" {"F:S1378T1700166773.79"}
+  "lib/conduit/opam" {"F:S1661T1700166773.79"}
+  "lib/conduit/resolver.cmi" {"F:S5324T1700166773.79"}
+  "lib/conduit/resolver.cmt" {"F:S92816T1700166773.79"}
+  "lib/conduit/resolver.cmti" {"F:S28650T1700166773.79"}
+  "lib/conduit/resolver.cmx" {"F:S4849T1700166773.79"}
+  "lib/conduit/resolver.ml" {"F:S5835T1700166773.79"}
+  "lib/conduit/resolver.mli" {"F:S3823T1700166773.79"}
+]

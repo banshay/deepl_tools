@@ -1,0 +1,7 @@
+version = "0.6.0"
+description = ""
+requires = "bimage threads"
+archive(byte) = "bimage_io.cma"
+archive(native) = "bimage_io.cmxa"
+plugin(byte) = "bimage_io.cma"
+plugin(native) = "bimage_io.cmxs"

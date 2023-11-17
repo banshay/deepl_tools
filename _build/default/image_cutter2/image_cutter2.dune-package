@@ -1,0 +1,4 @@
+(lang dune 3.11)
+(name image_cutter2)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (image_cutter2)))

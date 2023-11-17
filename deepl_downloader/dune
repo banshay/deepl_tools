@@ -1,0 +1,6 @@
+(executable
+ (public_name deepl_downloader)
+ (name main)
+ (libraries cohttp-lwt-unix lwt csv))
+
+

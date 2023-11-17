@@ -1,0 +1,1 @@
+let path = {|/home/banshay/projects/deepl_tools/image_cutter2/_opam/lib/ocaml|}

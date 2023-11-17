@@ -1,0 +1,18 @@
+(executables
+ (names for_each expr compose)
+ (modules for_each expr compose)
+ (libraries bimage-unix))
+
+(executables
+ (names display)
+ (modules display)
+ (libraries bimage-unix bimage-io bimage-display))
+
+(alias
+ (name examples)
+ (deps for_each.exe expr.exe compose.exe))
+
+(alias
+ (name runtest)
+ (package bimage-unix)
+ (deps for_each.exe expr.exe compose.exe))

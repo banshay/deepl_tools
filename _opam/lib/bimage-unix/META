@@ -1,0 +1,7 @@
+version = "0.6.0"
+description = ""
+requires = "bimage ctypes-foreign unix"
+archive(byte) = "bimage_unix.cma"
+archive(native) = "bimage_unix.cmxa"
+plugin(byte) = "bimage_unix.cma"
+plugin(native) = "bimage_unix.cmxs"

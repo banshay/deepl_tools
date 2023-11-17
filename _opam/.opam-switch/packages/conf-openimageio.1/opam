@@ -1,0 +1,47 @@
+opam-version: "2.0"
+synopsis:
+  "Virtual package relying on OpenImageIO development package installation"
+description:
+  "This package can only install if the OpenImageIO library is available on the system."
+maintainer: "zachshipko@gmail.com"
+authors: "OpenImageIO devs"
+license: "BSD-3-Clause"
+homepage: "https://www.openimageio.org"
+bug-reports: "https://github.com/ocaml/opam-repository/issues"
+depends: [
+  "conf-pkg-config" {build}
+]
+flags: conf
+build: [
+  "sh"
+  "-c"
+  "pkg-config --atleast-version=2 --print-errors OpenImageIO || c++ -E test.cpp"
+]
+depexts: [
+  ["libopenexr-dev"] {os-distribution = "debian" & os-version >= "11"}
+  ["libopenimageio-dev"] {os-family = "debian"}
+  ["libopenimageio-dev"] {os-family = "ubuntu"}
+  ["OpenImageIO-devel"] {os-distribution = "fedora"}
+  ["epel-release" "OpenImageIO-devel"] {os-distribution = "centos"}
+  ["OpenImageIO-devel"] {os-family = "suse" | os-family = "opensuse"}
+  [
+    "boost1.76-filesystem@edge"
+    "boost1.76-thread@edge"
+    "openimageio-dev@testing"
+  ] {os-family = "alpine"}
+  ["openimageio"] {os-family = "arch"}
+  ["openimageio"] {os = "macos" & os-distribution = "homebrew"}
+  ["openimageio"] {os = "macos" & os-distribution = "macports"}
+  ["openimageio"] {os = "freebsd"}
+  ["openimageio"] {os = "openbsd"}
+  ["openimageio"] {os = "netbsd"}
+]
+extra-files: ["test.cpp" "md5=8ff7529590dfa51ff95aaae4feb97ad2"]
+x-ci-accept-failures: [
+  "centos-7"
+  "opensuse-15.2"
+  "ubuntu-16.04"
+  "ubuntu-18.04"
+  "oraclelinux-7"
+  "oraclelinux-8"
+]

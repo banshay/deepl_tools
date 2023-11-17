@@ -1,0 +1,7 @@
+version = "0.6.0"
+description = ""
+requires = ""
+archive(byte) = "bimage.cma"
+archive(native) = "bimage.cmxa"
+plugin(byte) = "bimage.cma"
+plugin(native) = "bimage.cmxs"

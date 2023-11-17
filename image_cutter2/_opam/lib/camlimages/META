@@ -1,0 +1,94 @@
+name = "CamlImages"
+version = "4.2.6"
+description = "Objective Caml image processing library"
+
+package "all_formats" (
+  requires = "camlimages.core, unix, camlimages.exif camlimages.gif camlimages.jpeg camlimages.png camlimages.tiff camlimages.xpm"
+  version = "4.2.6"
+)
+
+package "all" (
+  requires = "camlimages.all_formats, camlimages.freetype, camlimages.graphics, camlimages.lablgtk2"
+  version = "4.2.6"
+)
+
+package "core" (
+  directory = "core"
+  version = "5.0.4"
+  description = ""
+  requires = ""
+  archive(byte) = "camlimages.cma"
+  archive(native) = "camlimages.cmxa"
+  plugin(byte) = "camlimages.cma"
+  plugin(native) = "camlimages.cmxs"
+)
+package "exif" (
+  directory = "exif"
+  version = "5.0.4"
+  description = ""
+  requires = "camlimages.core unix"
+  archive(byte) = "camlimages_exif.cma"
+  archive(native) = "camlimages_exif.cmxa"
+  plugin(byte) = "camlimages_exif.cma"
+  plugin(native) = "camlimages_exif.cmxs"
+)
+package "freetype" (
+  directory = "freetype"
+  version = "5.0.4"
+  description = ""
+  requires = "camlimages.core"
+  archive(byte) = "camlimages_freetype.cma"
+  archive(native) = "camlimages_freetype.cmxa"
+  plugin(byte) = "camlimages_freetype.cma"
+  plugin(native) = "camlimages_freetype.cmxs"
+)
+package "gif" (
+  directory = "gif"
+  version = "5.0.4"
+  description = ""
+  requires = "camlimages.core"
+  archive(byte) = "camlimages_gif.cma"
+  archive(native) = "camlimages_gif.cmxa"
+  plugin(byte) = "camlimages_gif.cma"
+  plugin(native) = "camlimages_gif.cmxs"
+)
+package "jpeg" (
+  directory = "jpeg"
+  version = "5.0.4"
+  description = ""
+  requires = "camlimages.core"
+  archive(byte) = "camlimages_jpeg.cma"
+  archive(native) = "camlimages_jpeg.cmxa"
+  plugin(byte) = "camlimages_jpeg.cma"
+  plugin(native) = "camlimages_jpeg.cmxs"
+)
+package "png" (
+  directory = "png"
+  version = "5.0.4"
+  description = ""
+  requires = "camlimages.core"
+  archive(byte) = "camlimages_png.cma"
+  archive(native) = "camlimages_png.cmxa"
+  plugin(byte) = "camlimages_png.cma"
+  plugin(native) = "camlimages_png.cmxs"
+)
+package "tiff" (
+  directory = "tiff"
+  version = "5.0.4"
+  description = ""
+  requires = "camlimages.core"
+  archive(byte) = "camlimages_tiff.cma"
+  archive(native) = "camlimages_tiff.cmxa"
+  plugin(byte) = "camlimages_tiff.cma"
+  plugin(native) = "camlimages_tiff.cmxs"
+)
+package "xpm" (
+  directory = "xpm"
+  version = "5.0.4"
+  description = ""
+  requires = "camlimages.core"
+  archive(byte) = "camlimages_xpm.cma"
+  archive(native) = "camlimages_xpm.cmxa"
+  plugin(byte) = "camlimages_xpm.cma"
+  plugin(native) = "camlimages_xpm.cmxs"
+)

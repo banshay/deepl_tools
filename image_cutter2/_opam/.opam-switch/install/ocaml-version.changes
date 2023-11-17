@@ -1,0 +1,21 @@
+opam-version: "2.0"
+added: [
+  "doc/ocaml-version" {"D"}
+  "doc/ocaml-version/CHANGES.md" {"F:S4802T1700249143.34"}
+  "doc/ocaml-version/LICENSE.md" {"F:S756T1700249143.34"}
+  "doc/ocaml-version/README.md" {"F:S1722T1700249143.34"}
+  "lib/ocaml-version" {"D"}
+  "lib/ocaml-version/META" {"F:S197T1700249143.34"}
+  "lib/ocaml-version/dune-package" {"F:S875T1700249143.34"}
+  "lib/ocaml-version/ocaml_version.a" {"F:S93696T1700249143.34"}
+  "lib/ocaml-version/ocaml_version.cma" {"F:S116563T1700249143.34"}
+  "lib/ocaml-version/ocaml_version.cmi" {"F:S13872T1700249143.34"}
+  "lib/ocaml-version/ocaml_version.cmt" {"F:S224231T1700249143.34"}
+  "lib/ocaml-version/ocaml_version.cmti" {"F:S93555T1700249143.34"}
+  "lib/ocaml-version/ocaml_version.cmx" {"F:S6070T1700249143.34"}
+  "lib/ocaml-version/ocaml_version.cmxa" {"F:S767T1700249143.34"}
+  "lib/ocaml-version/ocaml_version.cmxs" {"F:S104480T1700249143.34"}
+  "lib/ocaml-version/ocaml_version.ml" {"F:S19722T1700249143.34"}
+  "lib/ocaml-version/ocaml_version.mli" {"F:S18666T1700249143.34"}
+  "lib/ocaml-version/opam" {"F:S1669T1700249143.34"}
+]

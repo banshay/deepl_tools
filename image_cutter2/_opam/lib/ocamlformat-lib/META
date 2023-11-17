@@ -1,0 +1,106 @@
+version = "0.26.1"
+description = ""
+requires =
+"dune-build-info
+ ocaml-version
+ ocamlformat-lib.format_
+ ocamlformat-lib.ocaml_common
+ ocamlformat-lib.ocamlformat_stdlib
+ ocamlformat-lib.odoc_parser
+ ocamlformat-lib.parser_extended
+ ocamlformat-lib.parser_standard
+ ocamlformat-lib.result
+ ocp-indent.lib
+ uuseg.string"
+archive(byte) = "ocamlformat_lib.cma"
+archive(native) = "ocamlformat_lib.cmxa"
+plugin(byte) = "ocamlformat_lib.cma"
+plugin(native) = "ocamlformat_lib.cmxs"
+package "format_" (
+  directory = "format_"
+  version = "0.26.1"
+  description = ""
+  requires = "either ocamlformat-lib.parser_shims"
+  archive(byte) = "format_.cma"
+  archive(native) = "format_.cmxa"
+  plugin(byte) = "format_.cma"
+  plugin(native) = "format_.cmxs"
+)
+package "ocaml_common" (
+  directory = "ocaml_common"
+  version = "0.26.1"
+  description = ""
+  requires = "ocamlformat-lib.parser_shims"
+  archive(byte) = "ocaml_common.cma"
+  archive(native) = "ocaml_common.cmxa"
+  plugin(byte) = "ocaml_common.cma"
+  plugin(native) = "ocaml_common.cmxs"
+)
+package "ocamlformat_stdlib" (
+  directory = "ocamlformat_stdlib"
+  version = "0.26.1"
+  description = ""
+  requires = "base cmdliner fpath ocamlformat-lib.ocaml_common stdio"
+  archive(byte) = "ocamlformat_stdlib.cma"
+  archive(native) = "ocamlformat_stdlib.cmxa"
+  plugin(byte) = "ocamlformat_stdlib.cma"
+  plugin(native) = "ocamlformat_stdlib.cmxs"
+)
+package "odoc_parser" (
+  directory = "odoc_parser"
+  version = "0.26.1"
+  description = ""
+  requires = "astring camlp-streams result"
+  archive(byte) = "odoc_parser.cma"
+  archive(native) = "odoc_parser.cmxa"
+  plugin(byte) = "odoc_parser.cma"
+  plugin(native) = "odoc_parser.cmxs"
+)
+package "parser_extended" (
+  directory = "parser_extended"
+  version = "0.26.1"
+  description = ""
+  requires =
+  "compiler-libs.common
+   menhirLib
+   ocamlformat-lib.ocaml_common
+   ocamlformat-lib.parser_shims"
+  archive(byte) = "parser_extended.cma"
+  archive(native) = "parser_extended.cmxa"
+  plugin(byte) = "parser_extended.cma"
+  plugin(native) = "parser_extended.cmxs"
+)
+package "parser_shims" (
+  directory = "parser_shims"
+  version = "0.26.1"
+  description = ""
+  requires = "compiler-libs.common"
+  archive(byte) = "parser_shims.cma"
+  archive(native) = "parser_shims.cmxa"
+  plugin(byte) = "parser_shims.cma"
+  plugin(native) = "parser_shims.cmxs"
+)
+package "parser_standard" (
+  directory = "parser_standard"
+  version = "0.26.1"
+  description = ""
+  requires =
+  "compiler-libs.common
+   menhirLib
+   ocamlformat-lib.ocaml_common
+   ocamlformat-lib.parser_shims"
+  archive(byte) = "parser_standard.cma"
+  archive(native) = "parser_standard.cmxa"
+  plugin(byte) = "parser_standard.cma"
+  plugin(native) = "parser_standard.cmxs"
+)
+package "result" (
+  directory = "result"
+  version = "0.26.1"
+  description = ""
+  requires = ""
+  archive(byte) = "ocamlformat_result.cma"
+  archive(native) = "ocamlformat_result.cmxa"
+  plugin(byte) = "ocamlformat_result.cma"
+  plugin(native) = "ocamlformat_result.cmxs"
+)

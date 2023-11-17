@@ -1,0 +1,23 @@
+opam-version: "2.0"
+lib: [
+  "_build/install/default/lib/bimage-io/META"
+  "_build/install/default/lib/bimage-io/bimage_io.a"
+  "_build/install/default/lib/bimage-io/bimage_io.cma"
+  "_build/install/default/lib/bimage-io/bimage_io.cmi"
+  "_build/install/default/lib/bimage-io/bimage_io.cmt"
+  "_build/install/default/lib/bimage-io/bimage_io.cmti"
+  "_build/install/default/lib/bimage-io/bimage_io.cmx"
+  "_build/install/default/lib/bimage-io/bimage_io.cmxa"
+  "_build/install/default/lib/bimage-io/bimage_io.ml"
+  "_build/install/default/lib/bimage-io/bimage_io.mli"
+  "_build/install/default/lib/bimage-io/dune-package"
+  "_build/install/default/lib/bimage-io/libbimage_io_stubs.a"
+  "_build/install/default/lib/bimage-io/opam"
+]
+stublibs: "_build/install/default/lib/stublibs/dllbimage_io_stubs.so"
+doc: [
+  "_build/install/default/doc/bimage-io/CHANGES.md"
+  "_build/install/default/doc/bimage-io/LICENSE.md"
+  "_build/install/default/doc/bimage-io/README.md"
+]
+libexec: "_build/install/default/lib/bimage-io/bimage_io.cmxs"

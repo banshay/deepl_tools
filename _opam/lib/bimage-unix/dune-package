@@ -1,0 +1,96 @@
+(lang dune 3.11)
+(name bimage-unix)
+(version 0.6.0)
+(sections
+ (lib .)
+ (libexec .)
+ (doc ../../doc/bimage-unix)
+ (stublibs ../stublibs))
+(files
+ (lib
+  (META
+   bimage_unix.a
+   bimage_unix.cma
+   bimage_unix.cmi
+   bimage_unix.cmt
+   bimage_unix.cmti
+   bimage_unix.cmx
+   bimage_unix.cmxa
+   bimage_unix.ml
+   bimage_unix.mli
+   bimage_unix__.cmi
+   bimage_unix__.cmt
+   bimage_unix__.cmx
+   bimage_unix__.ml
+   bimage_unix__Data.cmi
+   bimage_unix__Data.cmt
+   bimage_unix__Data.cmx
+   bimage_unix__Image.cmi
+   bimage_unix__Image.cmt
+   bimage_unix__Image.cmx
+   bimage_unix__Magick.cmi
+   bimage_unix__Magick.cmt
+   bimage_unix__Magick.cmti
+   bimage_unix__Magick.cmx
+   bimage_unix__Stb.cmi
+   bimage_unix__Stb.cmt
+   bimage_unix__Stb.cmti
+   bimage_unix__Stb.cmx
+   data.ml
+   dune-package
+   image.ml
+   libbimage_unix_stubs.a
+   magick.ml
+   magick.mli
+   opam
+   stb.ml
+   stb.mli))
+ (libexec (bimage_unix.cmxs))
+ (doc (CHANGES.md LICENSE.md README.md))
+ (stublibs (dllbimage_unix_stubs.so)))
+(library
+ (name bimage-unix)
+ (kind normal)
+ (archives (byte bimage_unix.cma) (native bimage_unix.cmxa))
+ (plugins (byte bimage_unix.cma) (native bimage_unix.cmxs))
+ (foreign_objects stb.o)
+ (foreign_archives (archives (for all) (files libbimage_unix_stubs.a)))
+ (foreign_dll_files ../stublibs/dllbimage_unix_stubs.so)
+ (native_archives bimage_unix.a)
+ (requires unix ctypes-foreign bimage)
+ (main_module_name Bimage_unix)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name bimage_unix__)
+     (visibility public)
+     (kind alias)
+     (source (path Bimage_unix__) (impl (path bimage_unix__.ml-gen))))
+    (name Bimage_unix)
+    (modules
+     (module
+      (obj_name bimage_unix)
+      (visibility public)
+      (source
+       (path Bimage_unix)
+       (intf (path bimage_unix.mli))
+       (impl (path bimage_unix.ml))))
+     (module
+      (obj_name bimage_unix__Data)
+      (visibility public)
+      (source (path Data) (impl (path data.ml))))
+     (module
+      (obj_name bimage_unix__Image)
+      (visibility public)
+      (source (path Image) (impl (path image.ml))))
+     (module
+      (obj_name bimage_unix__Magick)
+      (visibility public)
+      (source (path Magick) (intf (path magick.mli)) (impl (path magick.ml))))
+     (module
+      (obj_name bimage_unix__Stb)
+      (visibility public)
+      (source (path Stb) (intf (path stb.mli)) (impl (path stb.ml))))))
+   (wrapped true))))
