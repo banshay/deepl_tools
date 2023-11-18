@@ -1,4 +1,4 @@
 (executable
  (name main)
  (public_name image_cutter)
- (libraries bimage-unix bimage)) 
+ (libraries unix)) 

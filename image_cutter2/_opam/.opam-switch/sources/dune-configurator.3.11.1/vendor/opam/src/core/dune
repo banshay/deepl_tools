@@ -1,5 +1,0 @@
-(library
-  (name        opam_core)
-  (synopsis    "OCaml Package Manager core internal stdlib")
-  (libraries   dune_re unix sha dune_uutf)
-  (wrapped     false))
