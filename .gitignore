@@ -1,2 +1,8 @@
+.idea
 _build/
 _opam/
+
+**/examples/
+**/.venv/
+**/.cache/
+

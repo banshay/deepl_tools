@@ -1,2 +1,3 @@
 (test
- (name deepl_tools))
+ (name deepl_tools)
+ (libraries alcotest lib))

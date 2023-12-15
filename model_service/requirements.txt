@@ -1,0 +1,8 @@
+flask
+torch
+pickle5
+Pillow
+numpy
+requests
+scipy
+Ninja

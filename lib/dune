@@ -1,2 +1,3 @@
 (library
- (name deepl_tools))
+ (name lib)
+ (libraries unix re))
